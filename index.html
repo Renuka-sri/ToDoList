@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do-list</title>
+  <link rel="stylesheet" href="toDoListStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todolist">
+            <h1 style="color:rgb(91, 9,u 116);">To-Do App</h1>
+            <div class="taskbar">
+                <div class="taskbardata">
+                    <h3>keep it Up!</h3>
+                    <div id="progressbar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div class="stats-number">
+                    <p class="taskcount">0/0</p>
+                </div>
+            </div>
+            <form>
+                <input type="text" id="form" placeholder="enter your task">
+                <button type="submit" id="submit">+</button>
+            </form>
+            <div class="toDoListContainer">
+                <ul type="none" id="todolistitems"></ul>
+                <img class="imgcontainer" src="girlpic.jpg" alt="image when todo list is empty"  />
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="todolist.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</html>

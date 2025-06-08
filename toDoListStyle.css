@@ -1,0 +1,218 @@
+/* media Queries */
+
+@media (max-width: 600px) {
+    .container {
+    margin: 0 20px;
+    padding: 0 10px;
+    }
+    .todolist{
+    padding: 1.5rem;
+    gap: 20px;
+    }
+    #numbers {
+    width: 60px;
+    height: 60px;
+    font-size: 1rem;
+    }
+    .taskbar input {
+    font-size: 1rem;
+    }
+}
+
+* {
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+    background-size: cover;
+    background-image: url(background.jpg);
+}
+
+.container{
+    border: 2px solid rgb(96, 6, 114);
+    padding: 3vh;
+    border-radius: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px rgb(176, 86, 194) ;
+   
+}
+h1{
+    margin-top: 5px;
+}
+#form{
+    
+    border: 1px solid rgb(147, 147, 199);
+    border-radius: 20px;
+    text-align:justify;
+    padding:5px;  
+    background-color: rgb(240, 208, 240);  
+}
+.toDoListContainer img{
+    height: 300px;
+    border-radius: 25px;
+    opacity: 0.5;
+    margin: 0%;
+}
+#submit{
+    border: 1px solid rgb(147, 147, 199);
+    border-radius: 50%;
+    background-color: rgb(233, 179, 221);
+     cursor: pointer;
+    
+}
+.taskbar{
+    border: 2px solid rgb(147, 147, 199);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0%;
+    background-color: rgb(240, 208, 240);
+    color: #920774;
+    height: 80px;
+    
+}
+.taskbardata{
+    width: 100%;
+}
+.taskcount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border: 1px solid rgb(147, 147, 199);
+    border-radius: 50%;
+    background-color: rgb(233, 179, 221);
+    font-weight: bold;
+    color: #941463;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    margin-right: 50px;
+   
+}
+#progressbar{
+    width: 100%;
+    height: 7px;
+    background: rgba(196, 7, 54, 0.3);
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+#progress{
+    width: 0%;
+    height: 100%;
+    background: #941463;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+
+}
+.toDoListContainer{
+    width: 100%;
+}
+
+#todolistitems li{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(68, 4, 63);
+    border-radius: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: box-shadow 0.2s ease;
+}
+#todolistitems li:hover{
+    box-shadow: 0 0 10px rgb(124, 49, 49)
+} 
+#todolistitems li .checkbox{
+    min-width: 15px;
+    height: 15px;
+    border: 2px solid rgb(102, 5, 81);
+    background:transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    appearance: none;
+}
+#todolistitems li .checkbox:checked{
+    background-color: #920774;
+    transform: scale(1.1);
+}
+#todolistitems li .checkbox:checked::before{
+    color: rgb(196, 49, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+span {
+    flex: 1;
+    min-width: 0; /* 💡 Important for wrapping in flex */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    font-size: 16px;
+    padding: 1px;
+}
+#todolistitems li.completed span{
+    text-decoration: 2px line-through #000;
+    color: #000;
+}
+
+.task-button{
+    display: flex;
+    gap: 10px;
+    margin-right: auto;
+}
+.task-button button{
+    width: 20px;
+    height: 20px;
+    color: #dd62ae;
+    font-size: 0.8rem;
+    padding: 0%;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.task-button button:hover{
+    transform: scale(1.2);
+}
+.task-button .edit-btn{
+    background:rgb(127, 134, 27);
+    margin: 3px;
+    margin-left: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #000;
+}
+.task-button .delete-btn{
+    background:rgb(233, 17, 107);
+    margin: 3px;
+    margin-right: 5px;
+    color: #000;
+    font-weight: bolder;
+    font-size: 15px;
+}
